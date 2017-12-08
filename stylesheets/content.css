@@ -1,90 +1,127 @@
-body {
+
+article > * {
   width: 700px;
   margin: 0 auto;
-  font-family: 'PT Sans', sans-serif;
-  /*background-image: url(mockup.jpg);
-  background-size: 800px 20624px;
-  background-position: top center;
-  background-repeat: no-repeat;*/
 }
 
-
-h1,h2,h3 {
+article h1,
+article h2,
+article h3 {
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: bold;
-
 }
 
-h1 {
+article h1 {
   margin-top: 67px;
   font-size: 38px;
   line-height: 45px;
 }
 
-h1+p,
-h1+blockquote{
+article h1 + p {
   margin-top: 8px;
   font-family: 'PT Sans Caption', sans-serif;
+  font-size: 22px;
   line-height: 32px;
   color: rgba(0,0,0,.4);
-
-}
-h1+p+p {
-  margin-top: 33px;
 }
 
-p+p,
-blockquote+blockquote {
-  margin-top: 28px;
+article h1 + p + p {
+  margin-top: 30px;
 }
 
-h2 {
+article h2 {
   margin-top: 43px;
   font-size: 32px;
   line-height: 36px;
   color: rgba(0, 0, 0, .8);
 }
 
-h2+p ,
-h2+ blockquote {
-  margin-top: 7px
+article h2 + p,
+article h2 + blockquote {
+  margin-top: 7px;
 }
 
-h3{
-margin-top: 36px;
-font-size: 28px;
-line-height: 34px;
-color: rgba(0, 0, 0, .8);
+article h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, .8);
 }
 
-h3+p,
-h3+blockquote {
-margin-top: 6px;
+article h3 + p,
+article h3 + blockquote {
+  margin-top: 6px;
 }
 
-p, li, ul, blockquote {
-margin-top: 29px;
-font-size: 20px;
-line-height: 34px;
+article p,
+article blockquote,
+article li {
+  margin-top: 29px;
+  font-size: 20px;
+  line-height: 34px;
 }
 
-a{
+article blockquote {
+  position: relative;
+  font-style: italic;
+
+}
+
+article blockquote::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: black;
+
+}
+
+article li {
+  margin-top: 16px;
+  margin-left: 28px;
+  list-style-type: disc;
+  padding-left: 2px;
+
+
+}
+
+article img {
+  display: block;
+  width: 1020px;
+  margin: 79px auto 0;
+
+}
+
+article img + h2 {
+  margin-top: 79px;
+}
+
+article img + p,
+article img + blockquote,
+article img + ul {
+  margin-top: -3px;
+}
+
+article h2 + img {
+  margin-top: 82px;
+}
+
+article h3 + img {
+  margin-top: 81px;
+}
+
+article a{
   color: inherit;
   text-decoration: underline;
 }
-a:hover{
+article a:hover{
   text-decoration: none;
 
 }
 
-a:visited{
+ article a:visited{
   color: inherit;
-}
-
-li{
-  list-style-type: disc;
-  margin: 16px 0px 0px 28px;
-}
-li+li{
-  margin-top: 14px;
 }
