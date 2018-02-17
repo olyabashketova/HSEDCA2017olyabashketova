@@ -30,6 +30,7 @@
 .green {
   border-color: #00C000;
   color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #2bd42b),color-stop(7%, #2bd42b),color-stop(95%, #01a401),to(#006900));
   background-image: linear-gradient(to bottom, #2bd42b 2%,#2bd42b 7%,#01a401 95%,#006900 100%);
 }
 
